@@ -4574,5 +4574,8 @@ message MetricsEvent {
 
     //Extensions
     EXTENSIONS = 1150;
+
+    //OPEXTRA settings
+    OPEXTRA_SETTINGS = 1151;
   }
 }
