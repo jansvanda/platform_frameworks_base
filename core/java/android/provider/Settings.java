@@ -3919,6 +3919,17 @@ public final class Settings {
          * the user should be prompted each time a call is made whether it should be placed using
          * SIP.  The {@link com.android.providers.settings.DatabaseHelper} replaces this with
          * SIP_ADDRESS_ONLY.
+         */
+        public static final String BUTTON_EXTRA_KEY_MAPPING = "button_extra_mapping";
+
+        /**
+         * Enable proxi check for wake keys - must be implemented in a device
+         * KeyHandler
+         * @hide
+         */
+        public static final String DEVICE_PROXI_CHECK_ENABLED = "device_proxi_check_enabled";
+
+         /*
          * @hide
          */
         @Deprecated
@@ -11137,6 +11148,7 @@ public final class Settings {
         /** @hide */ public static final int ZEN_MODE_NO_INTERRUPTIONS = 2;
         /** @hide */ public static final int ZEN_MODE_ALARMS = 3;
         /** @hide */ public static final int ZEN_MODE_OFF_ONLY = 4;
+
         /** @hide */ public static String zenModeToString(int mode) {
             if (mode == ZEN_MODE_IMPORTANT_INTERRUPTIONS) return "ZEN_MODE_IMPORTANT_INTERRUPTIONS";
             if (mode == ZEN_MODE_ALARMS) return "ZEN_MODE_ALARMS";
