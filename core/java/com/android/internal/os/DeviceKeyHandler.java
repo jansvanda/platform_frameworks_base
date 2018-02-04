@@ -13,6 +13,7 @@ package com.android.internal.os;
 
 import android.content.Intent;
 import android.view.KeyEvent;
+import android.view.WindowManagerPolicy;
 
 public interface DeviceKeyHandler {
 
@@ -67,5 +68,12 @@ public interface DeviceKeyHandler {
      * @return an Intent or null
      */
     public Intent isActivityLaunchEvent(KeyEvent event);
+
+    /**
+    * Pass the WindowManagerPolicy that instantated this key handler
+    */
+    default public void setWindowManagerPolicy(WindowManagerPolicy policy) {
+        // empty by definition
+    }
 }
 
