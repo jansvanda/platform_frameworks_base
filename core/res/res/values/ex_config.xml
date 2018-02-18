@@ -85,5 +85,5 @@
     <bool name="config_allowNotificationIconTextTinting">true</bool>
 
     <!-- Enable full screen DT2S in lockscreen -->
-    <bool name="fullScreenDT2S">false</bool>
+    <bool name="fullScreenDT2S">true</bool>
 </resources>
